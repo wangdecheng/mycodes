@@ -1,3 +1,5 @@
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * Created by wangdecheng on 27/02/2018.
  */
@@ -11,7 +13,6 @@ public class Simpletest {
  }
 
  public static void main(String[] args){
-   new Thread(()->coutnt()).start();
-  new Thread(()->coutnt()).start();
+    System.out.println(StringUtils.abbreviate("abcdefghijk",6));
  }
 }
